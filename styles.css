@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Georgia", serif;
+  background-image: url("Designer.jpeg");
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-color: #f5f5dc; /* Vintage beige background */
+  color: #4a4a4a; /* Dark gray text for a vintage feel */
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #d4d4aa2c; /* Soft vintage green */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid #b59f3b; /* Golden border */
+}
+
+.container:hover {
+    box-shadow: 0 0 20px rgba(255, 223, 0, 0.8), 0 0 30px rgba(255, 223, 0, 0.5); /* Glowing effect on hover */
+    background-color: #b59f3b2c; /* Change to a darker vintage green with more golden tones */
+}
+
+h2 {
+  text-align: center;
+  color: #0f5e05; /* White text for contrast */
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+    /* White glow */ 0 0 20px rgba(255, 255, 255, 0.6),
+    /* Slightly larger glow */ 0 0 30px rgba(255, 215, 0, 0.5); /* Golden glow */
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #0f5e05; /* White text for contrast */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+    /* White glow */ 0 0 20px rgba(255, 255, 255, 0.6),
+    /* Slightly larger glow */ 0 0 30px rgba(255, 215, 0, 0.5); /* Golden glow */
+  
+}
+
+label:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), /* White glow */
+                 0 0 20px rgba(255, 255, 255, 0.6), /* Larger glow */
+                 0 0 30px rgba(255, 223, 0, 0.5); /* Golden glow */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #b59f3b; /* Golden border for input fields */
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #faf8f8; /* Light vintage golden background for input fields */
+  color: #4a4a4a; /* Dark gray text */
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #b59f3b; /* Golden background for submit button */
+  color: #ffffff; /* White text */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #409823; /* Darker golden shade on hover */
+}
+
+select:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), /* White glow */
+    0 0 20px rgba(255, 255, 255, 0.6), /* Larger glow */
+    0 0 30px rgba(255, 223, 0, 0.5); /* Golden glow */  
+}

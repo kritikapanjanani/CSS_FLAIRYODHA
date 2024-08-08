@@ -1,0 +1,164 @@
+body{
+    background-image: url('Designer.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+
+
+.navbar {
+    background-color: #003d00; /* Dark green background */
+    color: #ffffff; /* White text color */
+    padding: 20px 40px; /* Increased padding for height */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensures navbar is above other content */
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav links */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: auto; /* Pushes the logo and text to the left */
+}
+
+.logo img {
+    height: 40px; /* Adjust logo size */
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 30px; /* Increased spacing between items */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2em; /* Increased font size */
+    padding: 10px 15px; /* Increased padding for better spacing */
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #aaffaa; /* Light green color on hover */
+}
+
+.main-content {
+    text-align: center;
+    padding-top: 80px; /* Padding to account for the fixed navbar */
+}
+
+.title {
+    color: #bba528ee; /* Golden color */
+    font-size: 2.5em; /* Adjust as needed */
+    margin-bottom: 40px; /* Space below the title */
+}
+
+.card-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center; /* Center the cards */
+}
+
+.card {
+    background: radial-gradient(circle, rgba(255, 215, 0, 1) 70%, rgba(255, 215, 0, 0) 100%);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+    padding: 2cm; /* Space from the edges for the image */
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+    transform: scale(1.05);
+}
+
+.image-container {
+    position: absolute;
+    top: 2cm;
+    left: 2cm;
+    right: 2cm;
+    bottom: 2cm;
+    overflow: hidden;
+    animation: oscillate 3s ease-in-out infinite;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    border-radius: 10px;
+}
+
+@keyframes oscillate {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Adjust the oscillation distance as needed */
+    }
+}
+
+.cta {
+    margin-top: 30px; /* Space above the statement */
+    font-size: 1.2em; /* Increase the font size of the statement */
+    font-weight: bold; /* Make the text bold */
+    color: goldenrod;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px; /* Adjust padding for smaller screens */
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 60px; /* Adjust padding for smaller screens */
+    }
+
+    .card {
+        width: 90%;
+        height: 300px;
+    }
+
+    .nav-links a {
+        font-size: 1em; /* Adjust font size for smaller screens */
+        padding: 8px 12px; /* Adjust padding for smaller screens */
+    }
+}
